@@ -1,13 +1,15 @@
 Package: ppcor
 Type: Package
-Title: Partial and Semi-partial (Part) correlation
-Version: 1.0
-Date: 2011-06-14
+Title: Partial and Semi-Partial (Part) Correlation
+Version: 1.1
+Date: 2015-11-19
 Author: Seongho Kim
 Maintainer: Seongho Kim <biostatistician.kim@gmail.com>
-Description: The R package ppcor can calculate parital and semi-partial
+Depends: R (>= 2.6.0), MASS
+Description: Calculates partial and semi-partial
         (part) correlations along with p-value.
 License: GPL-2
-Packaged: 2012-10-29 08:59:30 UTC; ripley
+Packaged: 2015-12-03 03:07:25 UTC; kimse
+NeedsCompilation: no
 Repository: CRAN
-Date/Publication: 2012-10-29 08:59:30
+Date/Publication: 2015-12-03 13:05:14

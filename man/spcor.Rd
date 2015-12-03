@@ -18,7 +18,7 @@ a character string indicating which semi-partial (part) correlation coefficient 
 }
 }
 \details{
-Semi-partial correlation is the correlation of two variables with variation from a third or more other variables removed only from the second variable.
+Semi-partial correlation is the correlation of two variables with variation from a third or more other variables removed only from the second variable. When the determinant of variance-covariance matrix is numerically zero, Moore-Penrose generalized matrix inverse is used. In this case, no \code{p-value} and \code{statistic} will be provided if the number of variables are greater than or equal to the sample size.
 }
 \value{
 \item{estimate}{a matrix of the semi-partial (part) correlation coefficient between two variables}
@@ -29,10 +29,7 @@ Semi-partial correlation is the correlation of two variables with variation from
 \item{method}{the correlation method used}
 }
 \references{
-Kim, S.H. and Yi, S. (2007) Understanding relationship between sequence and functional evolution in yeast proteins . Genetica, 131: 151.
-Kim, S.H. and Yi, S. (2006) Correlated asymmetry between sequence and functional divergence of duplicate proteins in Saccharomyces cerevisiae . Molecular Biology and Evolution, 23: 1068.
-Johnson, Richard A. and Dean W. Wichern (2002) Applied multivariate statistical analysis. Prentice Hall.
-Whittaker, Joe (1990) Graphical models in applied multivariate statistics. John Wiley & Sons. 
+Kim, S. (2015) ppcor: An R Package for a Fast Calculation to Semi-partial Correlation Coefficients. Communications for Statistical Applications and Methods,  22(6), 665-674. 
 }
 \author{
 Seongho Kim <\email{biostatistician.kim@gmail.com}>
@@ -49,7 +46,8 @@ y.data <- data.frame(
 				hl=c(7,15,19,15,21,22,57,15,20,18),
 				disp=c(0.000,0.964,0.000,0.000,0.921,0.000,0.000,1.006,0.000,1.011),
 				deg=c(9,2,3,4,1,3,1,3,6,1),
-				BC=c(1.78e-02,1.05e-06,1.37e-05,7.18e-03,0.00e+00,0.00e+00,0.00e+00,4.48e-03,2.10e-06,0.00e+00)
+				BC=c(1.78e-02,1.05e-06,1.37e-05,7.18e-03,0.00e+00,0.00e+00,0.00e+00
+              ,4.48e-03,2.10e-06,0.00e+00)
 			)
 
 # semi-partial (part) correlation
